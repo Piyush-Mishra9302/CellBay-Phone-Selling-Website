@@ -1,0 +1,39 @@
+
+
+
+
+#adminheader
+{
+    width: 100%;
+    height: 100px;
+    background-color: #ee6b6b;
+}
+
+#adminheader h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 3%;
+}
+#adminwrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+#leftmenu
+{
+    width: 15%;
+    background-color: rgb(72, 65, 65);
+    height: 100vh;
+    padding: 20px;
+}
+#admindata{
+    width: 85%;
+    padding: 30px;
+}
+
+.adminmenu
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

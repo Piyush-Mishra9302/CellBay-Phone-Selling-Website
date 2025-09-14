@@ -1,0 +1,60 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "adminname": "ADMIN",
+      "adminid": "admin@gmail.com",
+      "password": "admin123"
+    }
+  ],
+  "users": [
+    {
+      "id": 1757591618814,
+      "name": "Piyush Mishra",
+      "email": "piyush@gmail.com",
+      "password": "piyush123"
+    }
+  ],
+  "products": [
+    {
+      "id": "3b04",
+      "name": "Iphone 16 pro max",
+      "brand": "Apple",
+      "category": "under150000",
+      "price": "1,40,000",
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757850609/shpdlnn0u3xbl488t1ga.webp"
+    },
+    {
+      "id": "8aa5",
+      "name": "Iphone 16 plus",
+      "brand": "Apple",
+      "category": "under100000",
+      "price": "90,000",
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757850927/g418rzytgltcqoygaqw4.jpg"
+    },
+    {
+      "id": "71fb",
+      "name": "I phone 16",
+      "brand": "Apple",
+      "category": "under100000",
+      "price": "59,999",
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757851363/iikxg9j0zvildin4ydjo.webp"
+    },
+    {
+      "id": "a799",
+      "name": "S25 ultra",
+      "brand": "Samsung",
+      "category": "under150000",
+      "price": "1,33,000",
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757851621/hjq1hqypx6z9sns2a4x7.jpg"
+    },
+    {
+      "id": "f070",
+      "name": "g96",
+      "brand": "Motorola",
+      "category": "under20000",
+      "price": "18,999",
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757852025/vegohjk9gcgmrjxxjcty.jpg"
+    }
+  ]
+}
