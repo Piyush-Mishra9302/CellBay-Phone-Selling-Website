@@ -7,6 +7,8 @@ import ban4 from "../images/ban4.webp";
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import TopCOllections from '../components/TopCOllections';
+import AllProducts from '../components/AllProducts';
 // import w1 from "../images/w1.jpg";
 
 const Home=()=>{
@@ -49,23 +51,11 @@ const Home=()=>{
     </Carousel>
 
     <h1> Out Top Collections</h1>
+      <TopCOllections/>
+      <hr/>
 
-    <div id='topwacthes'>
-      
-        
- {/* <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={w1}  height="200" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card> */}
-
-    </div>
+     <h1>All Products</h1>
+     <AllProducts/>  
         </>
     )
 }

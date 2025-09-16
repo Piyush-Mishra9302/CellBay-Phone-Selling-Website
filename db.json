@@ -15,13 +15,38 @@
       "password": "piyush123"
     }
   ],
+  "orders": [
+    {
+      "id": "1108",
+      "customer": {
+        "name": "PIYUSH MISHRA",
+        "email": "piyush@gmail.com",
+        "address": "Dhawari Gali No 1 Satna Mp\nHome",
+        "city": "Satna",
+        "pincode": "485001"
+      },
+      "items": [
+        {
+          "id": "8aa5",
+          "name": "Iphone 16 plus",
+          "brand": "Apple",
+          "category": "under100000",
+          "price": 90000,
+          "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757850927/g418rzytgltcqoygaqw4.jpg",
+          "quantity": 2
+        }
+      ],
+      "total": 180000,
+      "date": "2025-09-16T10:11:13.070Z"
+    }
+  ],
   "products": [
     {
       "id": "3b04",
       "name": "Iphone 16 pro max",
       "brand": "Apple",
       "category": "under150000",
-      "price": "1,40,000",
+      "price": 140000,
       "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757850609/shpdlnn0u3xbl488t1ga.webp"
     },
     {
@@ -29,7 +54,7 @@
       "name": "Iphone 16 plus",
       "brand": "Apple",
       "category": "under100000",
-      "price": "90,000",
+      "price": 90000,
       "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757850927/g418rzytgltcqoygaqw4.jpg"
     },
     {
@@ -37,7 +62,7 @@
       "name": "I phone 16",
       "brand": "Apple",
       "category": "under100000",
-      "price": "59,999",
+      "price": 59999,
       "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757851363/iikxg9j0zvildin4ydjo.webp"
     },
     {
@@ -45,7 +70,7 @@
       "name": "S25 ultra",
       "brand": "Samsung",
       "category": "under150000",
-      "price": "1,33,000",
+      "price": 133000,
       "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757851621/hjq1hqypx6z9sns2a4x7.jpg"
     },
     {
@@ -53,8 +78,192 @@
       "name": "g96",
       "brand": "Motorola",
       "category": "under20000",
-      "price": "18,999",
+      "price": 18999,
       "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757852025/vegohjk9gcgmrjxxjcty.jpg"
+    },
+    {
+      "id": "a3b0",
+      "name": "Vivo T3",
+      "brand": "Vivo",
+      "category": "under30000",
+      "price": 21999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757863912/mbtowuvflztuuwfzzk1v.jpg"
+    },
+    {
+      "id": "3f4e",
+      "name": "Vivo T3x",
+      "brand": "Vivo",
+      "category": "under20000",
+      "price": 12999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757863972/yfp5ayt6xcmxwjjuysco.jpg"
+    },
+    {
+      "id": "242d",
+      "name": "Vivo T4",
+      "brand": "Vivo",
+      "category": "under30000",
+      "price": 23999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864011/e4ktvxyuz8q1zyxbs8l0.jpg"
+    },
+    {
+      "id": "27f5",
+      "name": "Vivo T4x",
+      "brand": "Vivo",
+      "category": "under20000",
+      "price": 14999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864050/hvxeqszcqdbaqk2es9qp.jpg"
+    },
+    {
+      "id": "dd51",
+      "name": "Oneplus 13",
+      "brand": "Oneplus",
+      "category": "under100000",
+      "price": 67999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864148/uvzthswkhmreu4fjoeum.jpg"
+    },
+    {
+      "id": "64f4",
+      "name": "Oneplus 11",
+      "brand": "Oneplus",
+      "category": "under50000",
+      "price": 39999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864206/lh6rqij9ihrfdtolj6o0.jpg"
+    },
+    {
+      "id": "9993",
+      "name": "Oneplus 11r",
+      "brand": "Oneplus",
+      "category": "under50000",
+      "price": 35999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864257/cfrzbfj4qq3tketvdvlf.jpg"
+    },
+    {
+      "id": "98e6",
+      "name": "Oneplus 12",
+      "brand": "Oneplus",
+      "category": "under100000",
+      "price": 54999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864332/pbutjggnpsddhrqigpgn.jpg"
+    },
+    {
+      "id": "6454",
+      "name": "Oneplus 12r",
+      "brand": "Oneplus",
+      "category": "under50000",
+      "price": 44999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757864373/lwltt4vnxqqqity3is4h.jpg"
+    },
+    {
+      "id": "3f91",
+      "name": "Oneplus nord CE 4",
+      "brand": "Oneplus",
+      "category": "under30000",
+      "price": 23999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865085/qmyyjrolzth8ahpsrxci.jpg"
+    },
+    {
+      "id": "f283",
+      "name": "Oneplus nord CE 4 lite",
+      "brand": "Oneplus",
+      "category": "under20000",
+      "price": 18999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865162/zjwdagossa2trzpiuss2.jpg"
+    },
+    {
+      "id": "72f7",
+      "name": "Samsung A35",
+      "brand": "Samsung",
+      "category": "under30000",
+      "price": 24999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865233/mbtdudoqnuz0kqyeyzht.jpg"
+    },
+    {
+      "id": "517a",
+      "name": "Motorola Edge 60 Fusion",
+      "brand": "Motorola",
+      "category": "under30000",
+      "price": 22999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865278/ls4ayfqyesvdxillneg5.jpg"
+    },
+    {
+      "id": "c6ba",
+      "name": "Motorola g35",
+      "brand": "Motorola",
+      "category": "under10000",
+      "price": 9999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865315/lhtybfw7gk7cm97qpwfc.jpg"
+    },
+    {
+      "id": "9ca8",
+      "name": "Motorola g45",
+      "brand": "Motorola",
+      "category": "under20000",
+      "price": 12999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865355/qwes4a9ij9uj0mbj6zjk.jpg"
+    },
+    {
+      "id": "3c23",
+      "name": "Motorola g96",
+      "brand": "Motorola",
+      "category": "under20000",
+      "price": 16999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865414/gexkbrwzosigjmzlbo7i.jpg"
+    },
+    {
+      "id": "2fa4",
+      "name": "Samsung F05",
+      "brand": "Samsung",
+      "category": "under10000",
+      "price": 8999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865517/y9jaxqoitjjia5e28bdp.jpg"
+    },
+    {
+      "id": "2d34",
+      "name": "IQOO 13",
+      "brand": "IQOO",
+      "category": "under100000",
+      "price": 59999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865565/eeukyedvi4wwevxm4ujk.jpg"
+    },
+    {
+      "id": "4e5f",
+      "name": "IQOO 12",
+      "brand": "IQOO",
+      "category": "under50000",
+      "price": 44999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865610/qcsnbu7rrzscphsnwhle.jpg"
+    },
+    {
+      "id": "5788",
+      "name": "IQOO neo 10",
+      "brand": "IQOO",
+      "category": "under50000",
+      "price": 34999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865667/lz2xowvpjmhxjntewcpf.jpg"
+    },
+    {
+      "id": "cf37",
+      "name": "IQOO neo 10r",
+      "brand": "IQOO",
+      "category": "under30000",
+      "price": 26999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865706/mrutdieyzlgcs8vbtmkn.jpg"
+    },
+    {
+      "id": "5b0d",
+      "name": "IQOO Z10",
+      "brand": "IQOO",
+      "category": "under20000",
+      "price": 19999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865763/g4euezkvlhobwjpg8hmr.jpg"
+    },
+    {
+      "id": "adb7",
+      "name": "IQOO Z10r",
+      "brand": "IQOO",
+      "category": "under20000",
+      "price": 17999,
+      "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865806/ser0xisgmdrjzjve0sds.jpg"
     }
   ]
 }

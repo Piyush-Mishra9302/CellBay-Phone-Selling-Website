@@ -61,6 +61,8 @@ const AddProduct = () => {
           <option>Select Brand</option>
           <option value="Apple">Apple</option>
           <option value="Samsung">Samsung</option>
+          <option value="Oneplus">Oneplus</option>
+          <option value="IQOO">IQOO</option>
           <option value="Realme">Realme</option>
           <option value="Motorola">Motorola</option>
           <option value="Vivo">Vivo</option>

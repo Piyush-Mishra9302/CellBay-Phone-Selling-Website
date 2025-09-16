@@ -91,13 +91,18 @@
 // };
 
 // export default TopMenu;
+
 import logo from "../images/logo.png";
 import Container from "react-bootstrap/Container";
+import { Dropdown } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { FaShoppingCart } from "react-icons/fa";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TopMenu = () => {
   const [showModal, setShowModal] = useState(false);
@@ -105,6 +110,8 @@ const TopMenu = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [categories, setCategories] = useState([]);
+  const cartItems = useSelector((state) => state.cart.items);
 
   const navigate = useNavigate();
 
@@ -157,6 +164,21 @@ const TopMenu = () => {
     }
   };
 
+  // Getting categories for pricing dropdown section
+  const getCategories = async() => {
+    try{
+       let res = await axios.get("http://localhost:3000/products");
+    const uniqueCategories = [...new Set(res.data.map((p) => p.category))]
+    setCategories(uniqueCategories);
+    } catch(err){
+      console.log("Error in fetching Categories : ", err);
+    }
+  }
+
+  useEffect(() => {
+    getCategories();
+  },[])
+
   return (
     <header className="w-full shadow-md bg-white">
       <div className="flex items-center justify-between px-3 py-1">
@@ -170,34 +192,51 @@ const TopMenu = () => {
         </div>
 
         {/* Main Menu */}
-        <div className="hidden md:flex">
-          <Navbar expand="md" className="bg-transparent">
-            <Container className="!px-0">
-              <Nav className="space-x-6 font-medium text-gray-700">
-                <Nav.Link href="/" className="hover:text-blue-600 transition-colors">
-                  Home
-                </Nav.Link>
-                <Nav.Link href="#features" className="hover:text-blue-600 transition-colors">
-                  Features
-                </Nav.Link>
-                <Nav.Link href="#pricing" className="hover:text-blue-600 transition-colors">
-                  Pricing
-                </Nav.Link>
-                <Nav.Link href="#sell" className="hover:text-blue-600 transition-colors">
-                  Sell
-                </Nav.Link>
-                <Nav.Link href="#contactus" className="hover:text-blue-600 transition-colors">
-                  Contact us
-                </Nav.Link>
-                <Nav.Link href="#aboutus" className="hover:text-blue-600 transition-colors">
-                  About us
-                </Nav.Link>
-              </Nav>
-            </Container>
-          </Navbar>
-        </div>
+         <div className="hidden md:flex">
+      <Navbar expand="md" className="bg-transparent">
+        <Container className="!px-0">
+          <Nav className="space-x-6 font-medium text-gray-700">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+
+            {/* Pricing Dropdown */}
+            <Dropdown>
+              <Dropdown.Toggle variant="transparent" className="text-gray-700">
+                Pricing
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                {categories.map((cat, i) => (
+                  <Dropdown.Item
+                    as={Link}
+                    key={i}
+                    to={`/category/${cat}`}
+                  >
+                    {cat}
+                  </Dropdown.Item>
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
+
+            <Nav.Link href="#sell">Sell</Nav.Link>
+            <Nav.Link href="#contactus">Contact us</Nav.Link>
+            <Nav.Link href="#aboutus">About us</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </div>
 
         {/* Right Menu */}
+         <div className="flex items-center space-x-6">
+      {/* other nav links here */}
+      <Link to="/cart" className="relative">
+        <FaShoppingCart className="text-2xl text-gray-700" />
+        {cartItems.length > 0 && (
+          <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+            {cartItems.length}
+          </span>
+        )}
+      </Link>
+    </div>
         <div
           className="text-sm font-semibold text-white bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 cursor-pointer transition-colors"
           onClick={() => setShowModal(true)}
