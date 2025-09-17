@@ -14,6 +14,9 @@ const AdminDashBoard = () => {
           <Link to="orders" className="orders">
             Orders
           </Link>
+          <Link to="sell" className="orders">
+            Sell
+          </Link>
         </div>
         <div id="admindata">
           <Outlet />

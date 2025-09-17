@@ -217,9 +217,9 @@ const TopMenu = () => {
               </Dropdown.Menu>
             </Dropdown>
 
-            <Nav.Link href="#sell">Sell</Nav.Link>
-            <Nav.Link href="#contactus">Contact us</Nav.Link>
-            <Nav.Link href="#aboutus">About us</Nav.Link>
+            <Nav.Link href="sell">Sell</Nav.Link>
+            <Nav.Link href="contactus">Contact us</Nav.Link>
+            <Nav.Link href="aboutus">About us</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -9,10 +9,36 @@
   ],
   "users": [
     {
-      "id": 1757591618814,
+      "id": "1757591618814",
       "name": "Piyush Mishra",
       "email": "piyush@gmail.com",
       "password": "piyush123"
+    }
+  ],
+  "sell": [
+    {
+      "id": "3cf2",
+      "brand": "Apple",
+      "model": "I phone 14",
+      "expectedPrice": "38998",
+      "condition": "few minor dents watershield",
+      "image": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1758090063/qq8cfeaapvzzlvtzmm6j.webp"
+    },
+    {
+      "id": "b422",
+      "brand": "Lava",
+      "model": "Lava Blaze X",
+      "expectedPrice": "8999",
+      "condition": "Brand new Condition. ",
+      "image": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1758090133/ejbh5rlf4nuaieojlmj7.webp"
+    },
+    {
+      "id": "6818",
+      "brand": "Redmi",
+      "model": "13 C",
+      "expectedPrice": "7999",
+      "condition": "Major scratch at back",
+      "image": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1758090177/j27n9bgnfydfbsuymcm2.webp"
     }
   ],
   "orders": [
@@ -38,6 +64,29 @@
       ],
       "total": 180000,
       "date": "2025-09-16T10:11:13.070Z"
+    },
+    {
+      "id": "4938",
+      "customer": {
+        "name": "PIYUSH MISHRA",
+        "email": "piyushmis9302@gmail.com",
+        "address": "Dhawari Gali No 1 Satna Mp\nHome",
+        "city": "Satna",
+        "pincode": "485001"
+      },
+      "items": [
+        {
+          "id": "72f7",
+          "name": "Samsung A35",
+          "brand": "Samsung",
+          "category": "under30000",
+          "price": 24999,
+          "images": "http://res.cloudinary.com/dwx9qu6za/image/upload/v1757865233/mbtdudoqnuz0kqyeyzht.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": 24999,
+      "date": "2025-09-16T13:22:09.715Z"
     }
   ],
   "products": [

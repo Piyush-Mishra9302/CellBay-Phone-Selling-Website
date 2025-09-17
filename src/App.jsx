@@ -7,6 +7,10 @@ import Pricing from "./pages/Pricing";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import Orders from "./admin pages/Orders";
+import Sell from "./pages/Sell";
+import SellPhonesAdmin from "./admin pages/SellProduct";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 
 const App=()=>{
@@ -19,6 +23,9 @@ const App=()=>{
             <Route path="category/:categoryName" element={<Pricing/>} />
             <Route path = "cart" element={<CartPage/>} />
             <Route path = "checkout" element={<CheckoutPage/>} />
+            <Route path = "sell" element={<Sell/>} />
+            <Route path = "aboutus" element={<AboutUs/>} />
+            <Route path="contactus" element={<ContactUs/>} />
             </Route>
           </Routes>
 
@@ -26,7 +33,7 @@ const App=()=>{
              <Route path="/admin" element={<AdminDashboard/>}>
               <Route path="addproduct" element={<AddProduct/>}/>
               <Route path="orders" element={<Orders/>} />
-                
+              <Route path="sell" element={<SellPhonesAdmin/>} />   
              
              </Route>
 
